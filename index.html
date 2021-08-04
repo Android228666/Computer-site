@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+  />
     <title>Computers</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="photo/logo.jpg" alt="Logo">
-            <ul>
+    <!-- HEADER -->
+    <section class="container bgi-section">
+        <header>
+        <div class="first-header-container">
+            <img src="photo/logo.svg" class="web-logo" alt="Logo">
+            <ul class="header-list">
                 <li>Главная</li>
                 <li>Курсы</li>
                 <li>Расписание</li>
@@ -21,51 +31,65 @@
                 <li>Рассылка</li>
                 <li>Контакты</li>
             </ul>
-            <button>
-                <p>Зайти в кабинет</p>
+            <button class="header-button">
+              <span> Зайти в кабинет</span>
             </button>
-            <h1>Первый курс
-                по компьютерной сборке</h1>
-            <ul>
-                <li>
-                    <p>18</p>
-                    <p>Дней</p>
-                </li>
-                <li>
-                    <p>18</p>
-                    <p>Часов</p>
-                </li>
-                <li>
-                    <p>18</p>
-                    <p>Минут</p>
-                </li>
-                <li>
-                    <p>18</p>
-                    <p>Секунд</p>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <button>
-                <p>Зайти в кабинет</p>
-            </button>
-            <ul>
-                <li>Учеников всего: 200</li>
-                <li>Успешно закончили курс: 190</li>
-            </ul>
-            <progress id="earned" max="1000000" value="400000">
-                40%
-            </progress>
-        </div>
-    </header>
+            </div>
+        </header>
 
-    <div>
+    <!-- Main-container -->
+        <section class="container">
+            <div>
+            <h1 class="main-title">Первый курс</br>
+                по компьютерной сборке</h1>
+            <ul class="main-list">
+                <li>
+                    <p class="main-number">18</p>
+                    <p class="main-timer">Дней</p>
+                </li>
+                <li>
+                    <p class="main-number">18</p>
+                    <p class="main-timer">Часов</p>
+                </li>
+                <li>
+                    <p class="main-number">18</p>
+                    <p class="main-timer">Минут</p>
+                </li>
+                <li>
+                    <p class="main-number">18</p>
+                    <p class="main-timer">Секунд</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    </section>
+
+    <!-- Money-container -->
+    <section class="container money-container">
+            <button class="money-button">
+                <span>Заказать курс</span>
+            </button>
+            <ul class="money-list">
+                <li> <span class="all-sudents"> Учеников всего:</span> <span class="all-students-number">200</span></li>
+                <li> <span class="end-courses">Успешно закончили курс:</span> <span class="students-end-courses">190</span></li>
+            </ul>
+           
+            <div class="bg-progress"></div>
+            <div class="progress"></div>
+            <span class="save"><span class="save-text">Заработано учениками:</span><span class="money-save">400 000?</span></span>
+            <span class="zero">0</span>
+            <span class="million">1 000 000?</span>
+    </section>
+
+    <!-- What we doing? -->
+     <section class=" container work-section">
         <div>
             <img src="photo/computer-in-frame.png" alt="Photo">
         </div>
-        <div>
-            <h2>Чем мы занимаемся?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in
+        <div class="doing-info">
+            <h2 class="ww-doing">Чем мы занимаемся?</h2>
+            <p class="ww-doing-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in
                 suspendisse
                 egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et neque, adipiscing sapien
                 sem senectus
@@ -75,195 +99,222 @@
                 arcu interdum
                 placerat nisi, lobortis.</p>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <div>
-            <img src="photo/icon-heading.jpg" alt="">
-            <h2>Быстрый старт</h2>
-            <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+    <!-- Fast-container -->
+     <section class="container">
+        <div class="first-fast-container">
+            <img class="fast-image" src="photo/icon-heading.svg" alt="image">
+            <h2 class="fast-start">Быстрый старт</h2>
         </div>
+        <p class="collect-computer">Больше 90% учеников прошли полный курс и смогли</br> собрать свой первый компьютер</p>
         <div>
-            <ul>
+            <ul class="fast-list">
                 <li>
-                    <p>100%</p>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    <p class="interest">100%</p>
+                    <div class="first-fast-rect"></div>
+                    <p class="fast-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                         tortor. Velit, volutpat
                         egestas fringilla mi porttitor tempus. Placerat dui.</p>
                 </li>
 
                 <li>
-                    <p>75%</p>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    <p class="interest">75%</p>
+                    <div class="second-fast-rect"></div>
+                    <p class="fast-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                         tortor. Velit, volutpat
                         egestas fringilla mi porttitor tempus. Placerat dui.</p>
                 </li>
 
                 <li>
-                    <p>50%</p>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    <p class="interest">50%</p>
+                    <div class="third-fast-rect"></div>
+                    <p class="fast-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                         tortor. Velit, volutpat
                         egestas fringilla mi porttitor tempus. Placerat dui.</p>
                 </li>
 
                 <li>
-                    <p>Итог</p>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                    <p class="interest">Итог</p>
+                    <div class="forth-fast-rect"></div>
+                    <p class="fast-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                         tortor. Velit, volutpat
                         egestas fringilla mi porttitor tempus. Placerat dui.</p>
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <h2>Получите профессию прямо сейчас</h2>
-        <ul>
+    <!-- About-work -->
+    <section class="container">
+        <h2 class="about-work-title">Получите профессию прямо сейчас</h2>
+        <ul class="about-work-list">
             <li>
-                <img src="photo/icon-1.svg" alt="photo">
-                <h2>Только практические
+                <img class="about-work-image" src="photo/icon-1.svg" alt="photo">
+                <h2 class="about-title">Только практические</br>
                     навыки в работе</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                <p class="about-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                     tortor. Velit, volutpat
                     egestas fringilla mi porttitor tempus. Placerat dui.</p>
             </li>
             <li>
-                <img src="photo/icon-2.svg" alt="photo">
-                <h2>Работа на самом
+                <img class="about-work-image" src="photo/icon-2.svg" alt="photo">
+                <h2 class="about-title">Работа на самом</br>
                     современном оборудовании</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                <p class="about-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                     tortor. Velit, volutpat
                     egestas fringilla mi porttitor tempus. Placerat dui.</p>
             </li>
             <li>
-                <img src="photo/icon-3.svg" alt="photo">
-                <h2>Сертификация
+                <img class="about-work-image" src="photo/icon-3.svg" alt="photo">
+                <h2 class="about-title">Сертификация</br>
                     по окончании обучения</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                <p class="about-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
                     tortor. Velit, volutpat
                     egestas fringilla mi porttitor tempus. Placerat dui.</p>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div>
+    <!-- Partners -->
+     <section class="container partners">
+         <div class="partners-container">
         <img src="photo/icon-heading1.svg" alt="photo">
-        <h2>Партнеры - топовые бренды</h2>
-        <ul>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
-            <li><img src="photo/msi-logo.svg" alt="photo"></li>
+        <h2 class="partners-title">Партнеры - топовые бренды</h2>
+        </div>
+        <ul class="partners-list">
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
+            <li class="partners-item"><img class="partners-image" src="photo/msi-logo.svg" alt="photo"></li>
         </ul>
 
-    </div>
+    </section>
 
-    <div>
-        <img src="photo/icon-heading2.svg" alt="photo">
-        <h2>Программа обучения</h2>
-        <p>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
-        <ul>
-            <li>
-                <h3>Неделя №1</h3>
-                <p>Красивая часть курса,
+    <!-- Training program -->
+    <section class="container training-program">
+      <div class="program-container">
+        <img class="training-image" src="photo/icon-heading2.svg" alt="photo">
+        <h2 class="training-title">Программа обучения</h2>
+        <p class="training-text">Больше 90% учеников прошли полный курс и смогли </br> собрать свой первый компьютер</p>
+      </div>
+        <ul class="training-list">
+            <li class="training-item">
+                <h3 class="item-title">Неделя №1</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №2</h3>
-                <p>Красивая часть курса,
+            
+            <li class="training-item"></li>
+            <li class="training-item"></li>
+            <li class="training-item">
+                <h3 class="item-title">Неделя №2</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №3</h3>
-                <p>Красивая часть курса,
+            <li class="training-item">
+                <h3 class="item-title">Неделя №3</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №4</h3>
-                <p>Красивая часть курса,
+            <li class="training-item"></li>
+            <li class="training-item"></li>
+            <li class="training-item">
+                <h3 class="item-title">Неделя №4</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №5</h3>
-                <p>Красивая часть курса,
+            <li class="training-item">
+                <h3 class="item-title">Неделя №5</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №6</h3>
-                <p>Красивая часть курса,
+            <li class="training-item"></li>
+            <li class="training-item"></li>
+            <li class="training-item">
+                <h3 class="item-title">Неделя №6</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
-            <li>
-                <h3>Неделя №7</h3>
-                <p>Красивая часть курса,
+            <li class="training-item">
+                <h3 class="item-title">Неделя №7</h3>
+                <p class="item-text">Красивая часть курса,
                     которая помогает в успехе</p>
             </li>
-            <li></li>
+            <li class="training-item"></li>
         </ul>
-        <rect></rect>
-    </div>
-
-    <div>
-        <img src="photo/icon-heading3.svg" alt="photo">
-        <h2>Ваши преподаватели</h2>
+        <div class="vertical-line"></div>
+        
+        <!--
+        <div class="horizontal-line first"></div>     
+        <div class="horizontal-line second"></div>
+        <div class="horizontal-line third"></div>
+        <div class="horizontal-line forth"></div>
+        <div class="horizontal-line fifth"></div>
+        <div class="horizontal-line sixth"></div>
+        <div class="horizontal-line seventh"></div> -->
+    </section>
+    <!-- Our-teachers -->
+    <section class="container our-teachers">
+        <div class="first-teacher-container">
+        <img class="teacher-circle" src="photo/icon-heading3.svg" alt="photo">
+        <h2 class="teacher-titel">Ваши преподаватели</h2>
+        </div>
         <div>
-            <ul>
-                <li>
-                    <img src="photo/teacher1.jpg" alt="teacher-photo">
-                    <h4>Дмитрий Иванов</h4>
-                    <h5>Специалист по видеокартам</h5>
-                    <button>
-                        <p>Биография</p>
+            <ul class="teacher-list">
+                <li class="teacher-item">
+                    <img src="photo/teacher1.png" alt="teacher-photo">
+                    <h4 class="name-title">Дмитрий Иванов</h4>
+                    <h5 class="type-of-work">Специалист по видеокартам</h5>
+                    <button class="teacher-button"> 
+                        <p class="button-text">Биография</p>
                     </button>
                 </li>
-                <li>
-                    <img src="photo/teacher2.jpg" alt="teacher-photo">
-                    <h4>Дмитрий Иванов</h4>
-                    <h5>Специалист по видеокартам</h5>
-                    <button>
-                        <p>Биография</p>
+                <li class="teacher-item">
+                    <img src="photo/teacher2.png" alt="teacher-photo">
+                    <h4  class="name-title">Дмитрий Иванов</h4>
+                    <h5 class="type-of-work">Специалист по видеокартам</h5>
+                    <button class="teacher-button">
+                        <p class="button-text">Биография</p>
                     </button>
                 </li>
-                <li>
-                    <img src="photo/teacher3.jpg" alt="teacher-photo">
-                    <h4>Дмитрий Иванов</h4>
-                    <h5>Специалист по видеокартам</h5>
-                    <button>
-                        <p>Биография</p>
+                <li class="teacher-item">
+                    <img src="photo/teacher3.png" alt="teacher-photo">
+                    <h4 class="name-title">Дмитрий Иванов</h4>
+                    <h5 class="type-of-work">Специалист по видеокартам</h5>
+                    <button class="teacher-button">
+                        <p class="button-text">Биография</p>
                     </button>
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <h2>Статьи каждую неделю</h2>
-        <h3>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</h3>
-        <button>
-            <p>Подписаться</p>
-        </button>
-        <ul>
-            <li><img src="photo/vk.svg" alt="vk-icon"></li>
-            <li><img src="photo/youtube.svg" alt="youtube-icon"></li>
-            <li><img src="photo/facebook.svg" alt="facebook-icon"></li>
-            <li><img src="photo/instagram.svg" alt="instagram-icon"></li>
+    <!-- Footer -->
+    <footer class="container">
+        <h2 class="footer-title">Статьи каждую неделю</h2>
+        <p class="footer-text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        <div class="footer-buttons">
+            <button class="first-footer-button">
+                <p class="first-button-text">E-mail</p>
+            </button>
+            <button class="second-footer-button">
+                <p class="second-button-text">Подписаться</p>
+            </button>
+        </div>
+        
+        <ul class="footer-list">
+            <a class="footer-link" href=""><li><img src="photo/vk.svg" alt="vk-icon"></li></a>
+            <a class="footer-link" href=""><li><img src="photo/youtube.svg" alt="youtube-icon"></li></a>
+            <a class="footer-link" href=""><li><img src="photo/facebook.svg" alt="facebook-icon"></li></a>
+            <a class="footer-link" href=""><li><img src="photo/instagram.svg" alt="instagram-icon"></li></a>
         </ul>
-        <p>Templates #18. More on Figma.info</p>
-    </footer>
+        <p class="last-text">Templates #18. More on Figma.info</p>
+    </footer>  
 </body>
 
 </html>
